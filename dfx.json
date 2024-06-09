@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "musica2_backend": {
+      "main": "src/musica2_backend/main.mo",
+      "type": "motoko"
+    },
+    "musica2_frontend": {
+      "dependencies": [
+        "musica2_backend"
+      ],
+      "source": [
+        "src/musica2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "musica2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
